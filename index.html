@@ -1,74 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Musical Fortnite</title>
-</head>
-<body>
-  <h1>My App is Working 🎉</h1>
-  <p>Welcome to Musical Fortnite</p>
-</body>
-</html><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Learn Music Easily</title>
+  <title>Musical Fortnite</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #00ff99;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #00ff99;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Learn Music Easily</h1>
-  <p>Simple music lessons for beginners</p>
-</header>
+  <h1>🎵 Musical Fortnite</h1>
+  <p>Learn music in a fun and simple way</p>
 
-<nav>
-  <button onclick="showSection('theory')">Theory</button>
-  <button onclick="showSection('practice')">Practice</button>
-  <button onclick="showSection('quiz')">Quiz</button>
-  <button onclick="showSection('about')">About</button>
-</nav>
-
-<main>
-  <section id="theory">
-    <h2>Music Theory</h2>
-    <ul>
-      <li>Notes and Staff</li>
-      <li>Scales</li>
-      <li>Chords</li>
-      <li>Rhythm</li>
-    </ul>
-  </section>
-
-  <section id="practice" class="hidden">
-    <h2>Practice Tips</h2>
-    <p>Practice daily for at least 20 minutes.</p>
-    <p>Start slowly and increase speed.</p>
-  </section>
-
-  <section id="quiz" class="hidden">
-    <h2>Quick Quiz</h2>
-    <p>How many notes are in a major scale?</p>
-    <button onclick="checkAnswer(7)">7</button>
-    <button onclick="checkAnswer(5)">5</button>
-    <p id="result"></p>
-  </section>
-
-  <section id="about" class="hidden">
-    <h2>About This App</h2>
-    <p>This app helps beginners learn music easily on phone or web.</p>
-  </section>
-</main>
-
-<script src="script.js"></script>
-
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js");
-}
-</script>
+  <button onclick="alert('Welcome to Musical Fortnite!')">
+    Start Learning
+  </button>
 
 </body>
 </html>
